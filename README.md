@@ -18,9 +18,16 @@ Add the documents management routes to a protected part of the routes:
 resources :documents, only: [:edit, :update, :index, :new, :create]
 ```
 
+In a document, `name` is the key for the document, `title` is shown to users above the document.
+
 If you've created a document, add the public route to your routes:
 ```Ruby
 get '/disclaimer', to: 'documents#show', name: 'disclaimer'
+```
+
+And finally, link to your document:
+```Ruby
+link_to 'Disclaimer', disclaimer_path
 ```
 
 ## Overriding the default controller
