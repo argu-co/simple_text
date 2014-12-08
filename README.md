@@ -9,7 +9,7 @@ rake db:migrate
 Which will generate a migration for the `documents` table.
 
 Optionally, add the SimpleText css to your `application.css`
-```Ruby
+```Scss
 *= require simple_text/application
 ```
 
