@@ -1,5 +1,3 @@
-module SimpleText
-  class ApplicationController < ActionController::Base
-
-  end
+class SimpleText::ApplicationController < ::ApplicationController
+  layout 'layouts/application'
 end
