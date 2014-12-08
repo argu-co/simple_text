@@ -1,0 +1,10 @@
+en:
+  simple_text:
+    index:
+      title: "Documents"
+    create: "Create document"
+    created: "Document created"
+    edit_document: "Edit document "
+    error: "Error saving document"
+    no_document: "No documents yet"
+    succeeded: "Update succeeded"

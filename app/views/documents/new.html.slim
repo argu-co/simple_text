@@ -1,0 +1,18 @@
+.simple-text
+  h1= t('simple_text.edit_document') + @document.name
+  =form_for @document do |f|
+    -@document.errors.full_messages.each do |message|
+      p=message
+    .form-row
+      .form-item
+        = f.label :name
+        = f.text_field :name
+      .form-item
+        = f.label :title
+        = f.text_field :title
+    .form-row
+      .form-item
+        =f.label :contents
+        =f.text_area :contents
+    .form-row
+      =f.submit

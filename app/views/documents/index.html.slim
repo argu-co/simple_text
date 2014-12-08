@@ -1,0 +1,32 @@
+.simple-text
+  h1= t('simple_text.index.title')
+  =link_to t('simple_text.create'), new_document_path
+  table.styled
+    thead
+      tr
+        th name
+        th title
+        th Last edit
+        th By
+        th Total edits
+        th Actions
+    tbody
+      -if @documents.present?
+        -@documents.each do |e|
+          tr
+            td= e.name
+            td= e.title
+            td= last_edit_at e
+            td= last_edit_by e
+            td= total_edits_on e
+            td= link_to t('simple_text.edit_document'), edit_document_path(e.name)
+      -else
+        tr
+          td
+          td
+          td
+            strong= t('simple_text.no_documents')
+          td
+          td
+    -if @documents.present?
+      =paginate @documents

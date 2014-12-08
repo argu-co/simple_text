@@ -1,0 +1,14 @@
+.simple-text
+  h1= t('simple_text.edit_document') + @document.name
+  =form_for @document do |f|
+    .form-row
+      .form-item
+        = f.label :title
+        = f.text_field :title
+    .form-row
+      .form-item
+        =f.label :contents
+        =f.text_area :contents
+    .form-row
+      =f.hidden_field :name
+      =f.submit

@@ -1,0 +1,22 @@
+.simple-text {
+  background-color: white;
+
+  textarea {
+    min-height: 25em;
+  }
+}
+
+.document {
+  color: black;
+
+  ol {
+    list-style-type: decimal;
+    & > li {
+      margin-left: 2em;
+    }
+  }
+
+  address {
+    white-space: pre;
+  }
+}
