@@ -32,7 +32,7 @@ link_to 'Disclaimer', disclaimer_path
 
 ## Customizing the view
 If you want different styling for your document, just overwrite the `documents/show` view in your application.
-The contents of the document can be rendered by calling `to_s` on the document object.
+The contents of the document can be rendered by calling `to_html` on the document object.
 
 ## Overriding the default controller
 For certain functionality, overriding the `DocumentsController` is required, e.g. to make [Pundit](https://github.com/elabs/pundit) work:
