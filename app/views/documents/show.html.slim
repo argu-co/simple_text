@@ -3,4 +3,4 @@
   article.document.show
     section.content
       .contents[id="#{@document.name}"]
-        == Redcarpet::Markdown.new(Redcarpet::Render::HTML.new, {tables: true, fenced_code_blocks: false, no_styles: true, escape_html: true}).render(@document.contents)
+        == @document.to_s
