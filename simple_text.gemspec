@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency "slim", ">= 2.0.0"
   s.add_dependency "whodunnit", "~> 0.0.5"
   s.add_dependency "kaminari", ">= 0.16.0"
-  s.add_dependency "redcarpet", "~> 3.1.2"
+  s.add_dependency "redcarpet", ">= 3.3.4"
 
   s.add_development_dependency "sqlite3"
 end
